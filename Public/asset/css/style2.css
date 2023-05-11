@@ -1,0 +1,363 @@
+/* Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif;
+}
+
+ 
+/* common */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+a{
+    text-decoration: none;
+    color: #252A2B;
+}
+a:hover{
+    color: #23527c;
+}
+.text-center {
+    text-align: center !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+/* Main */
+#main {
+    /* width: 960px; */
+}
+
+#header {
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #a4a4a4;
+}
+
+#nav {
+    display: inline-block;
+    position: relative;
+    height: 72px;
+    width: 100%;
+}
+
+#nav > li{
+    display: inline-block;
+   
+} 
+
+/* #nav li {
+    position: relative;
+    
+} */
+
+#nav img {
+    height: 40px;
+    padding: 0px 25px;
+    margin: 16px 0px;
+}
+
+#nav .search-container {
+    display: table;
+    position: relative;
+    line-height: 48px;
+}
+  
+#nav .search-container input[type=text] {
+    height: 48px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 500px;
+    outline: none;
+    margin: 12px;
+  }
+
+#nav .search-button {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    padding: 0 30px 0px 20px;
+    font-size: 26px;
+}
+
+/* #nav .search-icon {
+    font-size: 26px;
+    line-height: 48px;
+} */
+
+
+#header div {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+}
+
+#header div a {
+    font-size: 20px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #000;
+    line-height: 72px;
+    padding-right: 80px;
+}
+
+.shopping-cart {
+    font-size: 24px;
+    float: right;
+    line-height: 72px;
+    padding: 0 24px;
+
+}
+
+#nav .search-container search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+ 
+/* Subnav */
+nav ul {
+    list-style-type: none;
+    background-color: #f2f2f2;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.subnav {
+    position: relative;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+/* Search */
+#search {
+    position: relative;
+    margin-top: 126px;
+    height: 100%-72px;
+    /* height: 480px; */
+    padding-top: 30%;
+    background: url('/Public/asset/img/background.jpg') top center / cover no-repeat;
+}
+
+.search-content h2 {
+    text-align: center;
+}
+
+.search-content {
+    display: flex;
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    height: 100px; /* Điều chỉnh chiều cao tùy ý */
+    position: relative;
+    bottom: 250px;
+}
+
+.search-content input {
+    height: 72px;
+    padding: 30px;
+    border: none;
+    border-radius: 40px;
+    width: 800px;
+    outline: none;
+    margin: 12px;
+    position: relative;
+    align-items: center;
+    font-size: 24px;
+  }
+
+.search-content .search-button {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    padding: 0 30px 0px 20px;
+    font-size: 26px;
+    
+}
+
+
+/* Footer section */
+#footer{
+    background: #f2f2f2;
+    height: 76px;
+    padding: 15px 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 20px;
+}
+#footer .footer-header{
+    padding: 0 85px;
+}
+.footer-header .form-email{
+    display: flex;
+}
+.form-email .form-input{
+    display: inline;
+    flex: 4;
+}
+.form-email .form-input .form-enter{
+    width: 500px;
+    height: 46px;
+    padding: 0 20px;
+}
+.form-email .contant-header{
+    flex: 2;
+    font-size: 16px;
+}
+.form-email .form-input .button-register{
+    width: 107px;
+    height: 45px;
+    padding: 13px 25px;
+}
+.footer-header .form-email li{
+    display: inline;
+    text-decoration: none;
+}
+#number-phone{
+    color: red;
+
+}
+.ti-email{
+    margin-left: 50px;
+}
+.icon{
+    float: left;
+    font-size: 24px;
+    margin-top: 4px;
+}
+.form-email p{
+    display: inline;
+    line-height: 44px;
+    margin-left: 10px;
+}
+#footer .contact{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: calc(100%/4);
+}
+#footer .contact p{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+#footer .contact li{
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 16px;
+    
+}
+.contact-list img{
+    padding: 8px;
+}
+#footer .contact li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000A6;
+}
+#footer .footer-body{
+    display: inline-block;
+}
+#footer .contact li a:hover{
+    color: #23527c;
+}
+#main-page{
+    width: 100%;
+    height: auto;
+}
+#footer .footer-end p{
+    text-align: center;
+    font-size: 20px;
+    border-top: 2px solid #e7e7e7;
+    padding: 20px;
+}
+
+#footer .footer-end{
+
+}

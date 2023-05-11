@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#main{
+   width: 100%; 
+}
+a{
+    text-decoration: none;
+    color: #252A2B;
+}
+a:hover{
+    color: #23527c;
+}
+
+#header {
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #a4a4a4;
+}
+#header .login li{
+    list-style: none;
+}
+#nav {
+    display: inline-block;
+    position: relative;
+    height: 72px;
+    width: 100%;
+}
+
+#nav > li{
+    display: inline-block;
+   
+} 
+
+/* #nav li {
+    position: relative;
+    
+} */
+
+#nav img {
+    height: 40px;
+    padding: 0px 25px;
+    margin: 16px 0px;
+}
+
+#nav .search-container {
+    display: table;
+    position: relative;
+    line-height: 48px;
+}
+  
+#nav .search-container input[type=text] {
+    height: 48px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 500px;
+    outline: none;
+    margin: 12px;
+  }
+
+#nav .search-button {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    padding: 0 30px 0px 20px;
+    font-size: 26px;
+}
+
+/* #nav .search-icon {
+    font-size: 26px;
+    line-height: 48px;
+} */
+
+
+#header div {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+}
+
+#header div a {
+    font-size: 20px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #000;
+    line-height: 72px;
+    padding-right: 80px;
+}
+
+.shopping-cart {
+    font-size: 24px;
+    float: right;
+    line-height: 72px;
+    padding: 0 24px;
+
+}
+
+#nav .search-container search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+ 
+/* Subnav */
+nav ul {
+    list-style-type: none;
+    background-color: #f2f2f2;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.subnav {
+    position: relative;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+#product{
+    display: inline-block;
+    padding: 140px 80px 20px 80px;
+}
+#product .product-left{
+    float: left;
+    width: 50%;
+}
+
+#product .product-right{
+    float: right;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+.product-big-img{
+    width: 80%;
+    padding-right: 20px;
+}
+.product-big-img img{
+    width: 100%;
+    float: left;
+}
+.product-small-img{
+    width: 20%;
+    float: right;
+}
+.product-small-img img{
+    width: 100%;
+    cursor: pointer;
+}
+.product-right-content-information{
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    margin: 12px 0;
+    padding: 12px 0;
+}
+.product-right-content-size .size span{
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 12px 10px 12px 0;
+}
+.product-right-content-color .color span{
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 12px 10px 12px 0;
+}
+.product-right-content-button button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.product-right-content-button button:hover{
+    background-color: #868686;
+}
+.product-right-content-bottom{
+    padding-top: 40px;
+    border: 1px solid #dddddd;
+    position: relative;
+}
+.product-right-content-bottom-top{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    top: -15px;
+    left: 50%;
+    border-radius: 50%;
+}
+.product-right-content-quantity input{
+    width: 35px;
+    padding-left: 3px;
+}
+.product-related{
+    display: inline-block;
+    margin-top: 20px;
+    border-top: 1px solid #dddddd;
+    padding-top: 20px;
+}
+.product-related .product-related-title{
+    text-align: center; 
+}
+.product-related-content .product-content-item{
+    float: left;
+    width: calc(100%/5);
+    margin-top: 20px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.product-related-content .product-content-item:hover{
+    transform: scale(1.1);
+}
+.product-content-item img{
+    width: 100%;
+    padding: 5px 10px;
+}
+#footer{
+    background: #f2f2f2;
+    height: 76px;
+    padding: 15px 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 20px;
+}
+#footer .footer-header{
+    padding: 0 85px;
+}
+.footer-header .form-email{
+    display: flex;
+}
+.form-email .form-input{
+    display: inline;
+    flex: 4;
+}
+.form-email .form-input .form-enter{
+    width: 500px;
+    height: 46px;
+    padding: 0 20px;
+}
+.form-email .contant-header{
+    flex: 2;
+    font-size: 16px;
+}
+.form-email .form-input .button-register{
+    width: 107px;
+    height: 45px;
+    padding: 13px 25px;
+}
+.footer-header .form-email li{
+    display: inline;
+    text-decoration: none;
+}
+#number-phone{
+    color: red;
+
+}
+.ti-email{
+    margin-left: 50px;
+}
+.icon{
+    float: left;
+    font-size: 24px;
+    margin-top: 4px;
+}
+.form-email p{
+    display: inline;
+    line-height: 44px;
+    margin-left: 10px;
+}
+#footer .contact{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: calc(100%/4);
+}
+#footer .contact p{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+#footer .contact li{
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 16px;
+    
+}
+.contact-list img{
+    padding: 8px;
+}
+#footer .contact li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000A6;
+}
+#footer .footer-body{
+    display: inline-block;
+}
+#footer .contact li a:hover{
+    color: #23527c;
+}
+#main-page{
+    width: 100%;
+    height: auto;
+}
+#footer .footer-end p{
+    text-align: center;
+    font-size: 20px;
+    border-top: 2px solid #e7e7e7;
+    padding: 20px;
+}
+
+#footer .footer-end{
+
+}
